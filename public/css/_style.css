@@ -1,0 +1,71 @@
+/* Demo CSS */
+root {
+    display: block;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-size: 15px;
+    width: 1024px;
+    margin-top: 20px;
+    margin: 0 auto;
+    //margin-left: 25%;
+    box-shadow: 1px 0px 4px 2px #888888;
+}
+
+.header {
+    background-color: lemonchiffon;
+}
+
+.navigation {
+    background-color: darkorange;
+    width: 400px;
+    text-align: center;
+}
+
+.main {
+    background-color: aliceblue;
+}
+
+.test_db {
+    background-color:aquamarine;
+}
+
+.footer {
+    background-color:#ddd
+}
+
+table {
+    font-size: 13px;
+}
+
+li {
+    display:inline;
+    margin: 10px;
+    //float: left;
+    width: 100px;
+}
+.center {
+    text-align: center;
+}
+
+.container {
+    //border: 3px solid #000;
+    background-color: seashell;
+    //height: 100%;
+    margin-top: 0px;
+    //margin-bottom: 20px;
+    padding: 20px;
+    
+    //border: none;
+}
+
+
+.bold {
+    font-weight: bold;
+}

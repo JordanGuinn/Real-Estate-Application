@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 5, 2014, 6:43:31 PM
+    Author     : Dreamer
+*/
+
+.carousel-caption {
+    position: absolute;
+    top: 10;
+    right: 10;
+    margin: 760;
+    width: 550px;
+    height: 543px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+
+.form-horizontal {
+    position: relative;
+    
+    padding: 55px;
+    background-color: red;
+    
+}
+
+.form-horizontal .form-group {
+    background-color: brown;
+    
+}
+
+.form-group {
+   
+  max-width: 730px;
+  height: 46px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.form-message {
+    position: relative;
+    padding: 43px;
+    width: 4;
+    background-color: greenyellow;
+}
+
+.searchframe {
+    position:absolute;
+    top:324px;
+    
+}
+
