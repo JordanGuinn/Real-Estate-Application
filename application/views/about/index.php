@@ -13,15 +13,15 @@
 
 
     </head>
-
-    <body>
-
         <!-- Page Content -->
-        <div class="container">
+        <div class="container-fluid">
 
             <!-- Introduction Row -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-sm-1"></div>
+
+                <div class="col-sm-10">
+
                     <h1 class="page-header">About Us
                     </h1>
                     <p>ListedRealEstate.com has a simple mission: to sell property to people and sell property for people. 
@@ -36,76 +36,60 @@
 
             <!-- Team Members Row -->
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">Our Team</h2>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-3">
-                </div>
-                <div class="col-lg-6 col-md-4 col-sm-6 text-center">
-                    <img class="img-circle img-responsive img-center" src="../public/img/image200x200.png" alt="">
-                    <h3>Dhruvkumar Joshi <br>
-                        <small>Team Lead</small>
-                    </h3>
-                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="col-sm-1"></div>
+
+                <div class="col-sm-10">
+                    <h2 class="page-header">Our Development Team</h2>
                 </div>
 
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <img class="img-circle img-responsive img-center" src="../public/img/image200x200.png" alt="">
-                    <h3>Gilbert Szeto <br>
-                        <small>Back-End Phenom</small>
-                    </h3>
-                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-12">
+                    <div class="col-sm-1"></div>
 
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <img class="img-circle img-responsive img-center" src= "../public/img/image200x200.png" alt="">
-                    <h3>Kumari Sweta<br>
-                        <small>Database Expert</small>
-                    </h3>
-                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-                </div>
-
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <img class="img-circle img-responsive img-center" src="../public/img/image200x200.png" alt="">
-                    <h3>Jordan Guinn <br>
-                        <small>Front-End Specialist</small>
-                    </h3>
-                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-                </div>
-
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <img class="img-circle img-responsive img-center" src="../public/img/image200x200.png" alt="">
-                    <h3>Yefa Qi <br>
-                        <small>Front-End Master</small>
-                    </h3>
-                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-                </div>
-            </div><br>
-            <!--
-            <div class="row col-md-8 center-block">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="page-header">Contact Us</h2>
+                    <div class="col-sm-2 text-center">
+                        <img class="img-circle img-responsive img-center" src="<?php echo URL . "public/img/dj_glass_pic.png" ?>" alt="">
+                        <h3>Dhruv Joshi <br>
+                            <small>Team Lead</small>
+                        </h3>
+                        <p>Front-End / Back-End Developer</p>
+                        <a class="btn btn-social-icon btn-lg btn-twitter" href="http://twitter.com/FollowDhruv">
+                            <i class="fa fa-twitter"></i>
+                        </a>
                     </div>
 
-                    <form action="#" >
-                        <div class="form-group">
-                            <label for="inputName">Name:</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Name" required/>
-                            <label for="inputNumber">Contact Number:</label>
-                            <input type="number" class="form-control" id="inputNumber" placeholder="Number" required/>
-                            <label for="inputEmail">Email:</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required/> 
-                            <label for="inputMessage">Message:</label>
-                            <textarea class="form-control" rows="5" id="inputMessage" placeholder="Message" required></textarea>
 
-                            <br><button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div> -->
+                    <div class="col-sm-2 text-center">
+                        <img class="img-circle img-responsive img-center" src="../public/img/image200x200.png" alt="">
+                        <h3>Gilbert Szeto <br>
+                            <small>Back-End Specialist</small>
+                        </h3>
+                    </div>
+
+                    <div class="col-sm-2 text-center">
+                        <img class="img-circle img-responsive img-center" src= "<?php echo URL . "public/img/kumari.JPG" ?>" alt="">
+                        <h3>Kumari Sweta<br>
+                            <small>Database Lead</small>
+                        </h3>
+                    </div>
+
+                    <div class="col-sm-2 text-center">
+                        <img class="img-circle img-responsive img-center" src="../public/img/IMG_1006.JPG" alt="">
+                        <h3>Jordan Guinn <br>
+                            <small>Front-End Specialist</small>
+                        </h3>
+                        <a class="btn btn-social-icon btn-lg btn-linkedin" href="https://www.linkedin.com/pub/jordan-guinn/59/701/619">
+                            <i class="fa fa-linkedin"></i>
+                        </a>  
+                    </div>
+
+                    <div class="col-sm-2 text-center">
+                        <img class="img-circle img-responsive img-center" src="<?php echo URL . "public/img/kevin.jpg" ?>" alt="">
+                        <h3>Yefa Qi <br>
+                            <small>Front-End Specialist</small>
+                        </h3>
+                    </div>
+                </div><br>
+            </div>
         </div>
 
         <!-- jQuery -->

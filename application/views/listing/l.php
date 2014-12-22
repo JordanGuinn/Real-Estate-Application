@@ -42,8 +42,7 @@
  */
 ?>
 <div class="container-fluid" id='wait'>
-    <div class="col-md-1"></div>
-    <div class="col-md-10">
+    <div class="col-md-12">
         <div class="page-header">
             <h1><?php echo $listing->street_address ?><br> 
                 <?php echo $listing->city ?>, <?php echo $listing->state_code ?> <?php echo $listing->zipcode ?><br>
@@ -53,50 +52,68 @@
                     foreach ($price as $digit) {
                         $comma++;
                         echo $digit;
-                        if ($comma % 3 == 0 && $comma <= sizeof($price)){
+                        if ($comma % 3 == 0 && $comma <= sizeof($price)) {
                             echo ",";
                         }
                     }
-                    ?></small></h1>
+                    ?></small><br>
+               
+            </h1>
         </div>
         <div class="col-md-7">
             <div class="col-md-12">
                 <div class="largeborder">
-                    <a href="#">
-                        <?php
-                        echo var_dump($listing->images);
-                        if (!empty($listing->images)) {
-                            echo "<img height=\"600\" width=\"600\" src=\"data:image/jpeg;base64," .
-                            base64_encode($listing->images[0][3]) .
-                            "\" alt=\"...\" >";
-                            echo '</a>';
-                        }
-                        ?>              </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <?php for ($i = 0; $i < count($listing->images); ++$i) { ?>
-                        <div class ="col-md-4">
-                            <a href="#" class="thumbnail" onclick="">
-                                <?php
-                                if (!empty($listing->images)) {
-                                    echo "<img height=\"100\" width=\"100\" src=\"data:image/jpeg;base64," .
-                                    base64_encode($listing->images[$i][3]) .
-                                    "\" alt=\"...\" >";
-                                    echo '</a>';
-                                    $i++;
-                                }
-                                ?></a>
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a href="#">
+                                    <?php
+                                    if (!empty($listing->images)) {
+                                        echo "<img height=\"1000\" width=\"1000\" src=\"data:image/jpeg;base64," .
+                                        base64_encode($listing->images[0][3]) .
+                                        "\" alt=\"...\" >";
+                                        echo '</a>';
+                                    }
+                                    ?>              </a>
+                            </div>
+                            <?php for ($i = 1; $i < count($listing->images); ++$i) { ?>
+                                <div class="item">
+                                    <a href="#">
+                                        <?php
+                                        if (!empty($listing->images)) {
+                                            echo "<img height=\"1000\" width=\"1000\" src=\"data:image/jpeg;base64," .
+                                            base64_encode($listing->images[$i][3]) .
+                                            "\" alt=\"...\" >";
+                                            echo '</a>';
+                                        }
+                                        ?>              </a>
+                                </div>
+                            <?php } ?>
                         </div>
-                    <?php } ?>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </a>  
+                    </div>
+
                 </div>
-                <div class="col-md-1"></div>
             </div>
         </div>
         <div class="col-md-5">
             <div class="col-md-12">
+                 <form method="POST" action ="<?php echo URL; ?>listings/morelistinginfo">
+                    <?php $property_id = explode("/listings/l/", $_SERVER['REQUEST_URI']); ?>
+                    <button type="submit" name="listing_id" value="<?php echo $property_id[1] ?>" class="btn btn-success btn-lg col-lg-offset-4">Contact Realtor</button></a>
+                </form>
                 <div class ="panel panel-default">
                     <li><h4 id="listingheader"><?php echo ucfirst(strtolower($listing->unit_type)) ?></h4>
                     </li><li><h4 id="listingheader"><?php echo $listing->num_room ?> bedroom<?php if ($listing->num_room > 1) echo "s" ?> </h4>
@@ -111,21 +128,49 @@
             <div class ="col-md-12">
                 <div class="largeborder">
                     <body onload="initialize()">
-                        <div id="map-canvas" style="width: 320px; height: 320px;">
-                        </div>
-                        <div>
-                            <input class="hide" id="address">
+                        <div class="carousel-inner">
+                            <div id="map-canvas" style="width: 475px; height: 320px;">
+                            </div>
+                            <div>
+                                <input class="hide" id="address">
+                            </div>
                         </div>
                     </body>
                 </div>
             </div>
         </div>
-        <div class="col-md-6" id="listingheader">
-            <button type="submit" class="btn btn-primary">I'm Interested!</button>
-        </div>
     </div>
 </div>
 <br>
+
+<div class="modal fade" id="contact-realtor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h1 class="modal-title" id="myModalLabel">Contact Us!</h1>
+            </div>
+            <form action="<?php echo URL; ?>users/createuser" method="POST">
+                <div class="modal-body ">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter Full Name"required="Please Enter First Name" data-validation="length" data-validation-length="min2"/><br>
+                    <label for="contact_number">Contact Number:</label>
+                    <input type="text" class="form-control" name="contact_number" placeholder="Enter Phone Number"required="Please Enter Last Name"data-validation="length" data-validation-length="min2"/><br>
+                    <label for="email">Email:</label> 
+                    <input type="email" class="form-control" name="email" placeholder="Enter Email" required="Please Enter Email"/><br>
+
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" rows="3" name="message" value="Hi, I found your listing on Trulia. 
+                              Please send me more information about the listing at <?php echo $listing->address ?>, <?php echo $listing->city ?>, <?php echo $listing->state_code ?> <?php echo $listing->zipcode ?>. Thank you." 
+                              required="Please Enter Password"data-validation="length" data-validation-length="min5"/>Hi, I've come across one of your properties on Listed. I would like more information about the listing at <?php echo $listing->street_address ?>, located in <?php echo $listing->city ?>, <?php echo $listing->state_code ?> <?php echo $listing->zipcode ?>. Thank you.</textarea><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" name="submit_message" class="btn btn-default">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <script>
     var geocoder;

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" id='shift-down'>
 
     <?php
     /*
@@ -74,8 +74,7 @@
             } elseif (($row->size < $_POST["square_feet"]) && $_POST["square_feet"] == 5000) {
                 unset($listings_search_results[$i]);
                 unset($listing_ids[$i + 1]);
-            } elseif (($row->size > $_POST["square_feet"] || $row->size < $_POST["square_feet"] - 500)
-                    && ($_POST["square_feet"] > -1 && $_POST["square_feet"] < 5000)) {
+            } elseif (($row->size > $_POST["square_feet"] || $row->size < $_POST["square_feet"] - 500) && ($_POST["square_feet"] > -1 && $_POST["square_feet"] < 5000)) {
                 unset($listings_search_results[$i]);
                 unset($listing_ids[$i + 1]);
             }
@@ -83,7 +82,6 @@
         }
     }
     ?>    
-    <div class="col-md-1"></div>
     <div class="col-md-5">
         <h3 id="listingheader">Search results for "<?php echo htmlentities($search_string) ?>"</h3>
         <p id="listingheader">Displaying <?php
@@ -99,12 +97,11 @@
 </div>
 
 <div class="container-fluid">
-    <div class="col-md-1"></div>
     <div class="col-md-3">
         <div class="panel panel-default">
             <div class="panel body">
                 <div id="listingheader">
-                    <h4>Refine Search</h4>
+                    <h4>Filter Search</h4>
                     <?php $string = explode('&', next(explode('search_listings=', $_SERVER['REQUEST_URI']))); ?>
                     <form method="POST" action="#">
                         <h6>Min Price</h6>
@@ -200,10 +197,20 @@
                             ?>                        </a>
                     </div>
                     <table class ="table">
-                        <h4 id ="listingheader"><?php echo $row->street_address ?> <br>
-                            <?php echo $row->city ?>,
-                            <?php echo $row->state_code ?>
-                            <?php echo $row->zipcode ?></h4>
+                        <h4 id ="listingheader">
+                            <div class="col-md-6">
+                                <?php echo $row->street_address ?>                             
+                                <br>
+                                <?php echo $row->city ?>,
+                                <?php echo $row->state_code ?>
+                                <?php echo $row->zipcode ?>
+                            </div>
+                            <div class="col-md-3">
+                                 <a class="btn btn-default" id="listings-more-info-button" href="<?php echo URL . 'listings/l/' . current($listing_ids) . '' ?>">More Info</a>
+                            </div>
+                            <div class ="col-md-3"></div>
+                        </h4>
+                        <div class="col-md-3"> <br> </div>
                         <div class="col-md-3">
                             <?php echo ucfirst(strtolower($row->unit_type)) ?> <br>
                             Built in <?php
@@ -231,8 +238,6 @@
                 </div>
             </div>
         <?php } ?>
-        <button type="button" class="btn btn-default" disabled="disabled">Previous</button>
-        <button type="button" class="btn btn-default" disabled="disabled">Next</button>
     </div>
     <div class="col-md-1">
     </div>

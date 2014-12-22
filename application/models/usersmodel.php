@@ -97,10 +97,10 @@ class UsersModel extends BaseModel
                               ':id' => $user_id));
     }
 
-    public function isAdmin($user_id) {
-       $sql = "SELECT * FROM user WHERE type = 'ADMIN' and id = :user_id";
+    public function isAdmin($email) {
+       $sql = "SELECT * FROM user WHERE type = 'ADMIN' and email = :email";
        $query = $this->db->prepare($sql);
-       $query->execute(array(':user_id' => $user_id));
+       $query->execute(array(':email' => $email));
        $result = $query->fetch();
        if($result) {
           return TRUE;
@@ -108,11 +108,21 @@ class UsersModel extends BaseModel
           return FALSE;
        }
     }
-    
-    public function isRegisteredUser($user_id) {
-       $sql = "SELECT * FROM user WHERE type = 'REGISTERED_USER' and id = :user_id";
+    public function isRealtor($email) {
+       $sql = "SELECT * FROM user WHERE type = 'REALTOR' and email = :email";
        $query = $this->db->prepare($sql);
-       $query->execute(array(':user_id' => $user_id));
+       $query->execute(array(':email' => $email));
+       $result = $query->fetch();
+       if($result) {
+          return TRUE;
+       } else {
+          return FALSE;
+       }
+    }
+    public function isRegisteredUser($email) {
+       $sql = "SELECT * FROM user WHERE type = 'REGISTERED_USER' and email = :email";
+       $query = $this->db->prepare($sql);
+       $query->execute(array(':email' => $email));
        $result = $query->fetch();
        if($result) {
           return TRUE;

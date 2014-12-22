@@ -1,18 +1,14 @@
 <div class="container-fluid">
     
-    
-    
+   
     <div class="container">
-            <div>
-            <h2> View for Admin Only</h2>
-            <h3>Current Properties</h3>
+            <h2>Current Properties</h2>
             <table class="table table-striped">
                 <thead style="background-color: #ddd; font-weight: bold;">
                 <tr>
                     <td>Property Id</td>
                     <td>Name</td>
                     <td>Price</td>
-                    <td>School District</td>
                     <td>Size</td>
                     <td>Number of Room</td>
                     <td>Unit Type</td>
@@ -27,7 +23,6 @@
                         <td><?php if (isset($property->id)) echo $property->id; ?></td>
                         <td><?php if (isset($property->name)) echo $property->name; ?></td>
                         <td><?php if (isset($property->price)) echo $property->price; ?></td>
-                        <td><?php if (isset($property->school_district)) echo $property->school_district; ?></td>
                         <td><?php if (isset($property->size)) echo $property->size; ?></td>
                         <td><?php if (isset($property->num_room)) echo $property->num_room; ?></td>
                         <td><?php if (isset($property->unit_type)) echo $property->unit_type; ?></td>
@@ -39,7 +34,6 @@
                 </tbody>
             </table>
         </div>
-    </div>
 
     <div id="box" style="margin-top: 20px; margin-bottom: 50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 

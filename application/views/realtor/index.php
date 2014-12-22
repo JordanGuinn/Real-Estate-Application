@@ -1,10 +1,9 @@
 <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-        <h1 class="page-header">The Realtors
+        <h1 class="page-header">Meet our Realtors
         </h1>
     </div>
-    <div class="col-md-1"></div>
 
     <div class="col-md-2 col-md-offset-1">
         <div class="thumbnail">
@@ -82,6 +81,7 @@
         </div>
     </div>
 </div>
+    
 
 <div class="container-fluid">
     <div class="col-md-1"></div>
@@ -91,7 +91,7 @@
     </div>
     <div class ="col-md-5">
         <h2>Contact Us</h2>
-        <form>
+        <form action="#">
             <div class="form-group">
                 <label for="inputName">Name:</label>
                 <input type="text" class="form-control" id="inputName" placeholder="Name"/>
@@ -101,18 +101,17 @@
                 <input type="email" class="form-control" id="inputEmail" placeholder="Email"/> 
                 <label for="inputMessage">Message:</label>
                 <textarea class="form-control" rows="5" id="inputMessage" placeholder="Message"></textarea><br>
-                <button type="button" class="btn btn-primary">Send</button>
+                <button type="submit" class="btn btn-primary col-lg-offset-10 btn-lg" onclick="sendmail()">Send</button>
             </div>
         </form>
     </div> 
 </div>
-<div class ="col-md-1"></div>
 
 <div class="row">
     <div class="col-md-5"></div>
     <div class="col-md-4">
 
-        <a class="btn btn-social-icon btn-lg btn-twitter">
+        <!-- <a class="btn btn-social-icon btn-lg btn-twitter">
             <i class="fa fa-twitter"></i>
         </a>
         <a class="btn btn-social-icon btn-lg btn-facebook">
@@ -120,7 +119,7 @@
         </a>
         <a class="btn btn-social-icon btn-lg btn-link">
             <i class="fa fa-linkedin"></i>
-        </a>
+        </a> -->
     </div>
     <div class="col-md-3"></div>
 </div>
@@ -129,11 +128,11 @@
     <div class="col-md-1"></div>
     <div class="col-md-3">
 
-        <p><small>
+<!--        <p><small>
                 Avatars provided by IconArchive.com. <br>
                 License may be examined 
                 <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode"> here</a>.</small>
-        </p>
+        </p>-->
     </div>
 </div>
 

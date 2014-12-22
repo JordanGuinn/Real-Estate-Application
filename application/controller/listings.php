@@ -84,7 +84,7 @@ class Listings extends Controller {
     public function createpropertyimages() {
 
         $propertyimages_model = $this->loadModel('PropertiesModel');
-        
+
         if (isset($_POST["submit_create_image"])) {
             $blob = file_get_contents($_FILES["image_blob"]["tmp_name"]);
 
@@ -99,7 +99,7 @@ class Listings extends Controller {
             $listings_model = $this->loadModel('ListingsModel');
             $listings_model->createListing(1, 1, $_POST["property_id"], '2014-4-4 23:44:06', 2);
 
-            header('location: ' . URL . 'listings/index');
+            header('location: ' . URL . 'listings/listingcomplete');
         }
         require 'application/views/_templates/header.php';
         require 'application/views/listing/createpropertyimages.php';
@@ -245,4 +245,28 @@ class Listings extends Controller {
         }
     }
 
-}
+    public function listingcomplete() {
+        // load model, perform an action on the model
+        require 'application/views/_templates/header.php';
+        require 'application/views/listing/listingcomplete.php';
+        require 'application/views/_templates/footer.php';
+    }
+
+    public function morelistinginfo() {
+        $listings_model = $this->loadModel('ListingsModel');
+        $property_model = $this->loadModel('PropertiesModel');
+        $address_model = $this->loadModel('AddressesModel');
+        $property_image_model = $this->loadModel('PropertyImagesModel');
+
+        if (isset($_POST['listing_id'])) {
+            $listing_id = $_POST['listing_id'];
+            $listing = $listings_model->getListingById($listing_id);
+            $listing->images = $property_image_model->getAllImagesOfProperty($listing->property_id);
+        }
+            // load model, perform an action on the model
+            require 'application/views/_templates/header.php';
+            require 'application/views/listing/morelistinginfo.php';
+            require 'application/views/_templates/footer.php';
+        }
+    }
+    

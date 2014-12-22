@@ -2,6 +2,43 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/l.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/public/css/style_1.css</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/morelistinginfo.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/createpropertyListing.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/user/logout.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/index.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/models/propertiesmodel.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/controller/users.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/public/css/bootstrap.css.map</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/createaddressListing.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/user/login.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/search.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/models/usersmodel.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/deleteaddresses.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/_templates/header.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/user/messages.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/contact/index.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/user/index.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/user/messagedeleted.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/controller/about.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/models/listingsmodel.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/createpropertyimages.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/models/addressesmodel.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/_templates/footer.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/user/messagesent.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/home/index.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/libs/application.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/controller/listings.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/models/messagesmodel.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/listingcomplete.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/controller/home.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/sell/index.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/public/css/bootstrap.css</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/about/index.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/editproperties.php</file>
+            <file>file:/Users/mrbiggs783/Education/San%20Francisco%20State%20University/2014%20-%20Fall/Computer%20Science%20648/Project/NEW%20Listed/Listed/application/views/listing/deleteproperties.php</file>
+        </group>
     </open-files>
 </project-private>
